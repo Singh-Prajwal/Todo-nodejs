@@ -1,4 +1,4 @@
-//jshint esversion:6
+
 
 const express = require("express");
 const mongoose = require("mongoose");
@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://Prajwal.singh.226@gmail.com:Lpassword8226-0@cluster0.6odgcey.mongodb.net/todolistDB");
+mongoose.connect("mongodb+srv://Prajwal226:Lpassword8226@cluster0.6odgcey.mongodb.net/todolistDB");
 
 const itemsSchema = new mongoose.Schema({
   body: {
